@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_11">
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fon_blur" />
+
+    <Button
+        android:id="@+id/testing_button2"
+        android:layout_width="171dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#FD000A"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+        android:onClick="goToAct_3"
+        android:shadowColor="#161616"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:text="ДАЛЕЕ"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup_popularizatsiya"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="360dp"
+        android:layout_height="355dp"
+        android:fontFamily="@font/pragmatica_book"
+        android:text="Возможные виды работ помимо мелких ремонтных: \n - благоустройство территории (элементы озеленения, покрытия, ограждения (заборы), водные устройства, элементы освещения, малые архитектурные формы и городская мебель); \n - уборка (проводится регулярно, обычно сезонно); \n - популяризация. \n Но давайте поподробнее остановимся на последнем. Что по твоему мнению лучше заинтересует людей в истории объекта? "
+        android:textAlignment="center"
+        android:textColor="#D9020F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autoLink="web"
+        app:layout_constraintTop_toBottomOf="@+id/nachalo"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/nachalo"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+        android:text="ФРОНТ РАБОТ"
+        android:textAlignment="center"
+        android:textColor="#FD000A"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_popularizatsiya"
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.045"
+        tools:baselineAligned="true">
+
+        <RadioButton
+            android:id="@+id/radio_lektsiya"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pragmatica_book"
+            android:minHeight="50dp"
+            android:text="Экскурсия/лекция"
+            android:textAlignment="center"
+            android:textColor="#D9020F"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_informatsiya"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pragmatica_book"
+            android:minHeight="50dp"
+            android:text="Информационное обеспечение"
+            android:textAlignment="center"
+            android:textColor="#D9020F"
+            android:textSize="20sp" />
+
+
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

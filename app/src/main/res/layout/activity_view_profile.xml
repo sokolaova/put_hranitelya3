@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewProfile">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fon_blur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/testing_button"
+        android:layout_width="373dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FD000A"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+
+        android:onClick="goToNachalo"
+        android:shadowColor="#161616"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:text="НАЧАТЬ ШЕФСТВО"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drafts"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <TextView
+        android:id="@+id/profile2"
+        android:layout_width="357dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="480dp"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+
+        android:text="ЧЕРНОВИКИ"
+        android:textAlignment="center"
+        android:textColor="#FD000A"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_text_profile"
+        app:layout_constraintVertical_bias="0.968" />
+
+    <TextView
+        android:id="@+id/email_text_profile"
+        android:layout_width="324dp"
+        android:layout_height="40dp"
+        android:text=""
+        android:fontFamily="@font/pragmatica_book"
+        android:textAlignment="center"
+        android:textColor="#D9020F"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="357dp"
+        android:layout_height="44dp"
+        android:text="ПРОФИЛЬ"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+
+        android:textAlignment="center"
+        android:textColor="#FD000A"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drafts"
+        android:layout_width="283dp"
+        android:layout_height="195dp"
+        android:fontFamily="@font/pragmatica_book"
+        android:text=""
+
+        android:textAlignment="center"
+        android:textColor="#FD000A"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

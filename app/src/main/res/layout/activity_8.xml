@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_8">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fon_blur" />
+
+    <Button
+        android:id="@+id/testing_button2"
+        android:layout_width="171dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#FD000A"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+        android:onClick="goToAct_9"
+        android:shadowColor="#161616"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:text="ДАЛЕЕ"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="360dp"
+        android:layout_height="410dp"
+        android:fontFamily="@font/pragmatica_book"
+        android:text="Если объект не входит в ЕГРОКН (а добавление его туда – сложный и длительный процесс, которым занимаются профессионалы), тебе стоит обратиться за поддержкой к Администрации района, города или области. Далее с соответствующими органами власти необходимо составить «СОГЛАШЕНИЕ О ШЕФСТВЕ над памятником истории (воинским захоронением)». Также шефство может сопровождать консультант-специалист (необязательно). Теперь можно закрепить шефство над объектом на интерактивной карте мест памяти \n https://местопамяти.рф. "
+        android:textAlignment="center"
+        android:textColor="#D9020F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autoLink="web"
+        app:layout_constraintTop_toBottomOf="@+id/nachalo"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/nachalo"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+        android:text="СОГЛАШЕНИЕ"
+        android:textAlignment="center"
+        android:textColor="#FD000A"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

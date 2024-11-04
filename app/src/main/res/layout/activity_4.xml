@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_4">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fon_blur" />
+
+    <Button
+        android:id="@+id/testing_button2"
+        android:layout_width="171dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#FD000A"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+        android:onClick="radio_vibor"
+        android:shadowColor="#161616"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:text="ДАЛЕЕ"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="360dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pragmatica_book"
+        android:text="Имеется в виду «Единый государственный реестр объектов культурного наследия (памятников истории и культуры) народов Российской Федерации». Проверь наличие выбранного объекта на данном сайте МинКульт: "
+        android:textAlignment="center"
+        android:textColor="#D9020F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nachalo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nachalo"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+        android:text="РЕЕСТР ОКН"
+        android:textAlignment="center"
+        android:textColor="#FD000A"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:autoLink="web"
+        android:fontFamily="@font/pragmatica_book"
+        android:text="https://okn-mk.mkrf.ru/maps#"
+        android:textAlignment="center"
+        android:textColor="#D9020F"
+        android:textColorLink="#0166B8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/pragmatica_book"
+        android:text="Есть ли объект в ЕГРОКН, и какое значение он имеет, если да? "
+        android:textAlignment="center"
+        android:textColor="#D9020F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        app:layout_constraintVertical_bias="0.04"
+        tools:baselineAligned="true">
+
+        <RadioButton
+            android:id="@+id/radio_fed_znacheniye"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pragmatica_book"
+            android:minHeight="50dp"
+            android:text="Федерального значения"
+            android:textAlignment="center"
+            android:textColor="#D9020F"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_reg_znacheniye"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pragmatica_book"
+            android:minHeight="50dp"
+            android:text="Регионального значения"
+            android:textAlignment="center"
+            android:textColor="#D9020F"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_munitsip_znacheniye"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pragmatica_book"
+            android:minHeight="50dp"
+            android:text="Муниципального значения"
+            android:textAlignment="center"
+            android:textColor="#D9020F"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_net"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pragmatica_book"
+            android:minHeight="50dp"
+            android:text="Нет в Реестре"
+            android:textAlignment="center"
+            android:textColor="#D9020F"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

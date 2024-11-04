@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_2">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fon_blur" />
+
+    <Button
+        android:id="@+id/testing_button2"
+        android:layout_width="171dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#FD000A"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+        android:onClick="goToAct_3"
+        android:shadowColor="#161616"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:text="ДАЛЕЕ"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:fontFamily="@font/pragmatica_book"
+        android:text="Наставником может быть специалист, компетентный, например, в таких областях: история, архитектура, градостроительство, культурология и др. А в команде пусть будут ребята, действительно заинтересованные в шефстве над выбранным объектом. Будет лучше, если они уже имели опыт в волонтерстве: уборке на территории, мелких работах, разработке и проведении экскурсии и т.п. Но если нет, то ничего страшного, присоединится к движению никогда не поздно!"
+        android:textAlignment="center"
+        android:textColor="#D9020F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/nachalo"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/nachalo"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+        android:text="НАСТАВНИК И КОМАНДА"
+        android:textAlignment="center"
+        android:textColor="#FD000A"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="329dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:fontFamily="@font/pragmatica_book"
+        android:inputType="text"
+        android:text="ФИО наставника"
+        android:textAlignment="center"
+        android:textColor="#D9020F"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

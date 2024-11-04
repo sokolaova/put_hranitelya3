@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authorization"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authorization">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fon_reg" />
+
+    <Button
+        android:id="@+id/authorization_button_author2"
+        android:layout_width="126dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#FD000A"
+        android:onClick="goBackToRegistration"
+        android:shadowColor="#161616"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:text="НАЗАД"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword_author"
+        app:layout_constraintVertical_bias="0.871" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword_author"
+        android:layout_width="350dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:fontFamily="@font/pragmatica_book"
+
+        android:textColor="@color/material_dynamic_neutral10"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_text_author"
+        app:layout_constraintVertical_bias="0.145"
+        android:contentDescription="введите пароль"
+        android:hint="пароль"/>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="357dp"
+        android:layout_height="44dp"
+        android:text="АВТОРИЗАЦИЯ"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+
+        android:textAlignment="center"
+        android:textColor="#FD000A"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <TextView
+        android:id="@+id/email_text_author"
+        android:layout_width="324dp"
+        android:layout_height="40dp"
+        android:text="введите email:"
+        android:fontFamily="@font/pragmatica_book"
+
+        android:textAlignment="center"
+        android:textColor="#D9020F"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/author"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress_author"
+        android:layout_width="350dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/pragmatica_book"
+
+        android:textColor="@color/material_dynamic_neutral10"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_text_author"
+        app:layout_constraintVertical_bias="0.096"
+        android:contentDescription="введите почту"
+        android:hint="электронный адрес"/>
+
+    <TextView
+        android:id="@+id/password_text_author"
+        android:layout_width="324dp"
+        android:layout_height="40dp"
+        android:text="введите пароль:"
+        android:fontFamily="@font/pragmatica_book"
+
+        android:textAlignment="center"
+        android:textColor="#D9020F"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress_author"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/authorization_button_author"
+        android:layout_width="373dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#FD000A"
+        android:fontFamily="@font/pragmatica_extended_extra_bold"
+
+        android:onClick="goToViewProfile"
+        android:shadowColor="#161616"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:text="ВОЙТИ"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword_author"
+        app:layout_constraintVertical_bias="0.242" />
+</androidx.constraintlayout.widget.ConstraintLayout>
