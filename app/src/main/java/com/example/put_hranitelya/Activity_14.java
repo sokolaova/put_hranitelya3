@@ -13,6 +13,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import Database.DBConnect;
+import Database.DataCollector;
+
 public class Activity_14 extends AppCompatActivity {
 
     @Override
@@ -30,10 +32,17 @@ public class Activity_14 extends AppCompatActivity {
         testing_button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                try {
-                    long userId = dbConnect.getUserIdFromUsersTable(); //Add this method to DBConnect
 
-                    DBConnect.ResultData resultData = dbConnect.collectDataFromUI(userId);
+
+
+                try {
+                    DataCollector dataCollector = new DataCollector(Activity_14.this, findViewById(R.id.text1), findViewById(R.id.text2), findViewById(R.id.text3), findViewById(R.id.text5),
+                            findViewById(R.id.text6), findViewById(R.id.text7), findViewById(R.id.text8), findViewById(R.id.text10), findViewById(R.id.text12),
+                            findViewById(R.id.text13), findViewById(R.id.text14), findViewById(R.id.radiogroup), findViewById(R.id.radiogroup_front),
+                            findViewById(R.id.radiogroup_popularizatsiya), findViewById(R.id.editTextText), findViewById(R.id.editTextText2));
+
+                    long userId = dbConnect.getUserIdFromUsersTable();
+                    DBConnect.ResultData resultData = dataCollector.collectDataFromUI(userId);
 
                     long newRowId = dbConnect.insertResult(resultData);
 

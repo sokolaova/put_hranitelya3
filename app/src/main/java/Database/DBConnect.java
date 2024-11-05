@@ -2,30 +2,11 @@ package Database;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.Nullable;
-
-import com.example.put_hranitelya.Activity_10;
-import com.example.put_hranitelya.Activity_11;
-import com.example.put_hranitelya.Activity_12;
-import com.example.put_hranitelya.Activity_13;
-import com.example.put_hranitelya.Activity_5;
-import com.example.put_hranitelya.Activity_6;
-import com.example.put_hranitelya.Activity_7;
-import com.example.put_hranitelya.Activity_8;
-import com.example.put_hranitelya.R;
 import com.example.put_hranitelya.Users;
 
 public class DBConnect extends SQLiteOpenHelper {
@@ -78,25 +59,8 @@ public class DBConnect extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public void insertResults(int userId, String value1, String value2, String value3, String value4, String value5, String value6, String value7) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(ID, userId);
-        contentValues.put(col1, value1);
-        contentValues.put(col2, value2);
-        contentValues.put(col3, value3);
-        contentValues.put(col4, value4);
-        contentValues.put(col5, value5);
-        contentValues.put(col6, value6);
-        contentValues.put(col7, value7);
 
-        db.insert(dbTableResults, null, contentValues);
-        db.close();
-    }
-
-
-
-    public class ResultData {
+    public static class ResultData {
         public long userId; // Foreign key from users table
         public String col1;
         public String col2;
@@ -116,70 +80,6 @@ public class DBConnect extends SQLiteOpenHelper {
             this.col6 = col6;
             this.col7 = col7;
         }
-    }
-
-    TextView textView1 = findViewById(R.id.text1);
-    TextView textView2 = findViewById(R.id.text2);
-    TextView textView3 = findViewById(R.id.text3);
-    TextView textView5 = findViewById(R.id.text5);
-    TextView textView6 = findViewById(R.id.text6);
-    TextView textView7 = findViewById(R.id.text7);
-    TextView textView8 = findViewById(R.id.text8);
-    TextView textView10 = findViewById(R.id.text10);
-    TextView textView12 = findViewById(R.id.text12);
-    TextView textView13= findViewById(R.id.text13);
-    TextView textView14 = findViewById(R.id.text14);
-    RadioGroup radioGroup = findViewById(R.id.radiogroup);
-    RadioGroup radioGroup_front = findViewById(R.id.radiogroup_front);
-    RadioGroup radiogroup_popularizatsiya = findViewById(R.id.radiogroup_popularizatsiya);
-    EditText editTextText = findViewById(R.id.editTextText);
-    EditText editTextText2 = findViewById(R.id.editTextText2);
-
-    public ResultData collectDataFromUI(long userId) { //userId should be fetched from the 'users' table beforehand.
-
-        String col1 = textView1.getText().toString() + editTextText.getText().toString();
-        String col2 = textView2.getText().toString() + editTextText2.getText().toString();;
-        String col3 = textView3.getText().toString();
-
-        String col4, col5, col6;
-
-        int checkedId = radioGroup.getCheckedRadioButtonId();
-        if (checkedId == R.id.radio_fed_znacheniye) {
-            col4 = textView5.getText().toString();
-        } else if (checkedId == R.id.radio_reg_znacheniye) {
-            col4 = textView6.getText().toString();
-        } else if (checkedId == R.id.radio_munitsip_znacheniye) {
-            col4 = textView7.getText().toString();
-        } else if (checkedId == R.id.radio_net) {
-            col4 = textView8.getText().toString();
-
-        } else {
-            col4 = "";
-        }
-
-                int checkedId2 = radioGroup_front.getCheckedRadioButtonId();
-
-                if (checkedId2 == R.id.radio_yes) {
-                    col5 = textView10.getText().toString();
-                } else if (checkedId2 == R.id.radio_no) {
-                    col5 = "";
-                } else {
-                    col5 = "";
-                }
-
-                int checkedId3 = radiogroup_popularizatsiya.getCheckedRadioButtonId();
-
-                if (checkedId3 == R.id.radio_lektsiya) {
-                    col6 = textView12.getText().toString();
-                } else if (checkedId3 == R.id.radio_informatsiya) {
-                    col6 = textView13.getText().toString();
-                } else {
-                    col6 = "";
-                }
-
-        String col7 = textView14.getText().toString();
-
-        return new ResultData(userId, col1, col2, col3, col4, col5, col6, col7);
     }
 
     public long getUserIdFromUsersTable() {
