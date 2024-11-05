@@ -37,10 +37,10 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text1" />
+        app:layout_constraintTop_toBottomOf="@+id/text10" />
 
     <TextView
-        android:id="@+id/text1"
+        android:id="@+id/text10"
         android:layout_width="360dp"
         android:layout_height="390dp"
         android:fontFamily="@font/pragmatica_book"

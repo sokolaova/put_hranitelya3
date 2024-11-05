@@ -35,11 +35,11 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
         app:layout_constraintVertical_bias="0.108" />
 
     <TextView
-        android:id="@+id/text1"
+        android:id="@+id/text2"
         android:layout_width="360dp"
         android:layout_height="360dp"
         android:fontFamily="@font/pragmatica_book"
@@ -71,7 +71,7 @@
         app:layout_constraintVertical_bias="0.174" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextText2"
         android:layout_width="329dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -84,7 +84,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
         app:layout_constraintVertical_bias="0.0" />
 
 

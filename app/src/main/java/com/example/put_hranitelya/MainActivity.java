@@ -1,6 +1,7 @@
 package com.example.put_hranitelya;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import Database.DBConnect;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -85,7 +87,18 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Неуспешная регистрация", Toast.LENGTH_SHORT).show();
                 }
 
+                // Сохраняем текст в SharedPreferences
+                SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("savedText", email);
+                editor.apply();
+
+                // Переходим к ViewProfileActivity
+                Intent intent = new Intent(MainActivity.this, viewProfile.class);
+                startActivity(intent);
+
             }
         });
+
 
 }}

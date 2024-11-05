@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.065" />
 
     <TextView
-        android:id="@+id/text1"
+        android:id="@+id/text11"
         android:layout_width="360dp"
         android:layout_height="355dp"
         android:fontFamily="@font/pragmatica_book"
@@ -82,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text11"
         app:layout_constraintVertical_bias="0.045"
         tools:baselineAligned="true">
 
